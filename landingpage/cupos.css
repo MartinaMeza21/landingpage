@@ -1,0 +1,90 @@
+/* cupos.css */
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-image: url('image/cuadricula.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255,255,255,0.65);
+  z-index: -1;
+}
+
+.cine-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  margin-bottom: 35px;
+  font-size: 1.1rem;
+}
+
+.pantalla {
+  background: #0530DB;
+  color: white;
+  padding: 14px;
+  margin: 0 auto 35px;
+  max-width: 500px;
+  border-radius: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+.sala {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 12px;
+  max-width: 650px;
+  margin: auto;
+}
+
+.asiento {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px 10px 6px 6px;
+  background: #0CFA4C;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.asiento:hover {
+  transform: scale(1.08);
+}
+
+.ocupado {
+  background: #FF4FE2;
+  cursor: not-allowed;
+}
+
+.contador {
+  margin-top: 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 30px;
+  background: #0530DB;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  text-decoration: none;
+}
