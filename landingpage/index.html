@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Premiere</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+</head>
+
+<body>
+
+<section>
+<nav class="navbar fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand d-flex align-items-center" href="#">
+  <img src="image/mubi.png" alt="MUBI logo" class="me-2">
+  MUBI
+</a>
+
+<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+  
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Menú</h5>
+    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"></button>
+  </div>
+
+  <div class="offcanvas-body">
+    <ul class="navbar-nav">
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/films?all_films=true&sort=popularity_quality_score" target="_blank">Explorar</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/ar/showing" target="_blank">En cartelera</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/gifts " target="_blank">Regalá MUBI</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/ar/about" target="_blank">Acerca de MUBI</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/notebook" target="_blank">Notebook</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/notebook/magazine" target="_blank">Notebook Magazine</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/devices" target="_blank">Formas de ver</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="https://mubi.com/es/terms_of_service" target="_blank">Términos y privacidad</a>
+      </li>
+
+    </ul>
+  </div>
+
+</div>
+
+</div>
+</nav>
+</section>
+
+<div class="hero">
+
+  <img src="image/fotoportada.jpeg" alt="Portada MUBI">
+
+  <div class="hero-overlay">
+    <h1>
+      ¿HASTA DONDE LLEGARIAS POR SER PERFECTA?
+    </h1>
+
+    <p>
+      Viví una premiere inmersiva donde <br>
+      sos parte del experimento
+    </p>
+  </div>
+
+  <div class="hero-btn">
+    <button class="btn btn-acento rounded-pill px-4"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+      ACEPTA LAS CONSECUENCIAS
+    </button>
+  </div>
+
+</div>
+<div id="overlayPanel" class="overlay d-none">
+
+  <div class="panel">
+
+    <div id="panelForm">
+
+      <div class="panel-header">
+        <h5>Completa los siguientes datos</h5>
+        <button id="closePanel">✕</button>
+      </div>
+        <p>Estás a un paso de vivir La Sustancia en primera persona.</p>
+      <form id="formRegistro">
+
+        <label>Nombre y Apellido</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <div class="check">
+          <input type="checkbox">
+          <span>¿Vas acompañado/a?</span>
+        </div>
+
+        <button type="submit" class="btn-panel">Enviar</button>
+
+      </form>
+
+    </div>
+
+    <div id="panelSuccess" class="d-none success">
+      <h2>¡GRACIAS!</h2>
+      <p>Tu acceso está en camino. Revisá tu mail.</p>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="antes-de-comenzar text-center my-5">
+    <h1>ANTES DE COMENZAR</h1>
+    <h2>Recordá esta información</h2>
+</div>
+
+<div class="container my-5">
+  <div class="row justify-content-center text-center g-4">
+
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+      <div class="card custom-card card-icon-top">
+
+        <div class="icon-circle verde">
+          <i class="bi bi-calendar3"></i>
+        </div>
+
+        <div class="card-body card-pink">
+          <h5>¿CUÁNDO ES?</h5>
+          <p>16 de julio</p>
+          <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Premiere+MUBI&dates=20260716T190000/20260716T210000&details=Viv%C3%AD+una+premiere+inmersiva&location=Cin%C3%A9polis+Houssay" class="btn btn-green">Agendar</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+      <div class="card custom-card card-icon-top">
+
+        <div class="icon-circle rosa">
+          <i class="bi bi-clock"></i>
+        </div>
+
+        <div class="card-body card-green">
+          <h5>¿A QUÉ HORA ES?</h5>
+          <p>19:00 hs.</p>
+          <a href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Premiere+MUBI&dates=20260716T190000/20260716T210000&details=Viv%C3%AD+una+premiere+inmersiva&location=Cin%C3%A9polis+Houssay" class="btn btn-pink">Recordatorio</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+      <div class="card custom-card card-icon-top">
+
+        <div class="icon-circle rosa">
+          <i class="bi bi-people"></i>
+        </div>
+
+        <div class="card-body card-green">
+          <h5>CUPOS</h5>
+          <p>100 disponibles</p>
+          <a href="cupos.html" class="btn btn-pink">Cupos</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-6 d-flex justify-content-center">
+      <div class="card custom-card card-icon-top">
+
+        <div class="icon-circle verde">
+          <i class="bi bi-geo-alt"></i>
+        </div>
+
+        <div class="card-body card-pink">
+          <h5>¿DÓNDE ES?</h5>
+          <p>Cinépolis Houssay</p>
+          <a href="https://www.google.com/maps/place/Cinepolis+Plaza+Houssay/@-34.5994625,-58.4007792,17z/data=!3m1!4b1!4m6!3m5!1s0x95bccbdbdd5c8e33:0xf56780539b3c41e8!8m2!3d-34.5994669!4d-58.3982043!16s%2Fg%2F11fmq0ytdx?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D" class="btn btn-green">Maps</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="sinopsis-box container my-5">
+  <div class="row align-items-center">
+
+    <div class="col-md-7 sinopsis-texto">
+      <h1>Sinopsis</h1>
+
+      <h2>
+        Entre lo que sos y lo que podrías ser existe un límite,
+        algunos deciden cruzarlo.
+      </h2>
+
+      <p>
+        Porque el paso del tiempo se vuelve insoportable, surge una alternativa.
+        Perfecta, preciosa, peligrosamente tentadora, ¿te sumás?
+      </p>
+    </div>
+
+    <div class="col-md-5 text-center">
+      <img src="image/sinopsis.jpeg" alt="Cartelera" class="sinopsis-img">
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="experiencia-box">
+
+      <h1>Activa tu mejor versión</h1>
+
+      <h2>
+        La noche comienza en movimiento.
+      </h2>
+
+      <p>
+        Al llegar, vas a atravesar una alfombra intervenida especialmente para darte la bienvenida al experimento: música, luces y una entrada pensada para activar tu mejor versión desde el primer paso.
+      </p>
+
+      <p>
+        Una vez dentro, te vas a sumar a una clase de aeróbic en vivo guiada por las protagonistas. Seguí el ritmo, movete y convertite en parte de la experiencia antes de la proyección.
+      </p>
+
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row g-4">
+
+    <div class="col-md-6">
+      <img src="image/cinepolis.jpeg" alt="Imagen 1" class="galeria-img">
+    </div>
+
+    <div class="col-md-6">
+      <img src="image/sala.jpeg" alt="Imagen 2" class="galeria-img">
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="kit-box">
+    <div class="kit-contenido">
+
+      <h1>Tu kit de la dosis está en camino</h1>
+
+      <h2>
+        Recordá: sos solo uno
+      </h2>
+
+      <p>
+        Recibiste algo que no todos pueden tener.
+      </p>
+
+      <p>
+        Un acceso único, pensado como parte de la experiencia.
+      </p>
+
+      <p>
+        Ninguno es igual a otro. Revisá tu correo: lo vas a necesitar para entrar.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front">
+            <img src="image/dosis1sinfondo.png" alt="Card 1">
+          </div>
+
+          <div class="flip-card-back">
+            <p>Activador</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front">
+            <img src="image/dosis2sinfondo.png" alt="Card 2">
+          </div>
+
+          <div class="flip-card-back">
+            <p>Estabilizador</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 d-flex justify-content-center">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+
+          <div class="flip-card-front">
+            <img src="image/dosis3sinfondo.png" alt="Card 3">
+          </div>
+
+          <div class="flip-card-back">
+            <p>Tu entrada</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-5">
+  <div class="dress-box">
+    <div class="dress-contenido">
+
+      <h1>Dress Code</h1>
+
+      <h2>
+        Ingresá listo para entrenar
+      </h2>
+
+      <p>
+        El ingreso requiere dress code obligatorio: estética deportiva inspirada en los años 80.
+        Pensá en calzas, bodies, colores vibrantes y looks de fitness clásico.
+        Vas a asistir como participante de una clase en vivo.
+      </p>
+
+      <p>
+        Seguí la consigna. Formá parte del entrenamiento.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div class="container mb-5">
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-md-6 text-center">
+      <img src="image/look2.jpg" alt="Look deportivo años 80" class="dress-img derecha">
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="image/look3.jpg" alt="Look deportivo años 80" class="dress-img izquierda">
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="image/look4.jpg" alt="Look deportivo años 80" class="dress-img izquierda">
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="image/look5.jpg" alt="Look deportivo años 80" class="dress-img derecha">
+    </div>
+
+  </div>
+</div>
+<div class="text-center py-5">
+  <button class="btn btn-acento rounded-pill px-4"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal">
+    Acepta las consecuencias
+  </button>
+</div>
+
+<footer class="footer-mubi mt-5">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start">
+
+      <div class="col-md-4 mb-3 mb-md-0">
+        <div class="footer-brand d-flex justify-content-center justify-content-md-start align-items-center">
+          <img src="image/mubi.png" alt="MUBI logo">
+          <span>MUBI</span>
+        </div>
+      </div>
+
+      <div class="col-md-4 text-center text-md-end">
+        <a href="https://www.instagram.com/mubiargentina?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.tiktok.com/@mubi" class="social-icon"><i class="bi bi-tiktok"></i></a>
+        <a href="https://www.youtube.com/@mubilat" class="social-icon"><i class="bi bi-youtube"></i></a>
+        <a href="https://x.com/mubilat" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
